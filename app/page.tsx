@@ -88,6 +88,47 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="norway" className="mx-auto max-w-[1240px] px-5 pb-24 lg:px-8">
+        <div className="relative overflow-hidden rounded-[2rem] bg-[#0b2d57] text-white shadow-2xl shadow-[#0b2d57]/15">
+          <div className="pointer-events-none absolute inset-0 opacity-20 [background-image:linear-gradient(rgba(255,255,255,.12)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.12)_1px,transparent_1px)] [background-size:48px_48px]" />
+          <div className="relative grid gap-10 p-8 md:p-12 lg:grid-cols-[1.15fr_.85fr] lg:items-center lg:p-14">
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full border border-[#79f2b0]/35 bg-[#79f2b0]/10 px-4 py-2 text-sm font-black uppercase tracking-[.14em] text-[#79f2b0]">
+                <Globe2 className="size-4" /> Новое направление
+              </div>
+              <h2 className="mt-6 max-w-3xl text-[clamp(2.4rem,5vw,4.7rem)] font-black leading-[.96] tracking-[-.055em]">
+                Работа в Норвегии на <span className="text-[#79f2b0]">краболовном судне</span>
+              </h2>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
+                Сейчас рассматриваем кандидатов для работы в море. Менеджер расскажет о требованиях, графике, документах и условиях конкретного предложения.
+              </p>
+              <a href="/consultation" className="mt-8 inline-flex h-14 items-center justify-center rounded-full bg-[#79f2b0] px-7 text-base font-black text-[#0d2a22] transition-colors hover:bg-white">
+                Узнать условия <ArrowRight className="ml-2 size-5" />
+              </a>
+            </div>
+
+            <div className="rounded-[1.6rem] border border-white/15 bg-white/8 p-6 backdrop-blur md:p-8">
+              <p className="text-sm font-black uppercase tracking-[.16em] text-[#79f2b0]">Норвегия · море</p>
+              <div className="mt-6 space-y-4">
+                {[
+                  ['Направление', 'Краболовство'],
+                  ['Место работы', 'Краболовное судно'],
+                  ['Условия', 'Уточняются у менеджера'],
+                ].map(([label, value]) => (
+                  <div key={label} className="flex items-start justify-between gap-5 border-b border-white/12 pb-4 last:border-0 last:pb-0">
+                    <span className="text-sm text-white/50">{label}</span>
+                    <span className="text-right font-black">{value}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-7 text-sm leading-6 text-white/55">
+                Количество мест и возможность оформления зависят от актуального набора, опыта и документов кандидата.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="consultants" className="scroll-mt-20 bg-[#e7ebf4] py-24 text-[#101c33]">
         <div className="mx-auto max-w-[1280px] px-5 lg:px-8">
           <div className="text-center">
